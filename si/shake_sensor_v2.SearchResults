@@ -1,0 +1,20 @@
+---- sys_config.Threshod_ADXL375 Matches (21 in 2 files) ----
+Main.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src):     sys_config.Threshod_ADXL375[0]=THRESH_ACT_Defaut;
+Main.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src):	 sys_config.Threshod_ADXL375[1]=THRESH_INACT_Defaut;
+Main.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src):	 sys_config.Threshod_ADXL375[2]=TIME_INACT_Defaut;
+Main.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src):	 sys_config.Threshod_ADXL375[2]=ADXL375_INIT_THRESHOD;
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):		memcpy(sys_config.Threshod_ADXL375,eep_read+12,3);
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):        printf("\r\n    TRESH_ACT=0x%02X    TRESH_INACT=0x%02X    TIME_INACT=0x%02X \r\n",sys_config.Threshod_ADXL375[0],sys_config.Threshod_ADXL375[1],sys_config.Threshod_ADXL375[2]);
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):	   memcpy(eep_reg+12,sys_config.Threshod_ADXL375,3);
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):                            memcpy(sys_config.Threshod_ADXL375,Decode_buf+1,3);  // The same with  current
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):                            eeprom_writemultipledata( SHK_ADDR_SYSCONFI+12,sys_config.Threshod_ADXL375,3); 
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							ADXL375_Wr_OneByte(0x24,sys_config.Threshod_ADXL375[0]);  //保存检测活动阀值; (780mg/LSB)	01 
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							ADXL375_Wr_OneByte(0x25,sys_config.Threshod_ADXL375[1]);	//保存检测静止阀值; (780mg/LSB)
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							ADXL375_Wr_OneByte(0x26,sys_config.Threshod_ADXL375[2]);  //检测活动时间阀值; (1s/LSB)
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							memcpy(Ack_buf+2,sys_config.Threshod_ADXL375,3);
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):                            memcpy(sys_config.Threshod_ADXL375,Decode_buf+1,6);  // The same with  current
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):                            eeprom_writemultipledata( SHK_ADDR_SYSCONFI+12,sys_config.Threshod_ADXL375,6); 
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							ADXL375_Wr_OneByte(0x1D,sys_config.Threshod_ADXL375[3]);  //保存检测活动阀值; (780mg/LSB)	01 
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							ADXL375_Wr_OneByte(0x2C,sys_config.Threshod_ADXL375[4]);	//保存检测静止阀值; (780mg/LSB)
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							//  预留 ADXL375_Wr_OneByte(0x1F,sys_config.Threshod_ADXL375[2]);  //检测活动时间阀值; (1s/LSB)
+ShakeSensor_app.c (e:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\src_app):							memcpy(Ack_buf+2,sys_config.Threshod_ADXL375+3,3); 

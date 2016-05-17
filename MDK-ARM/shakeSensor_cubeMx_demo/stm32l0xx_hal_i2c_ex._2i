@@ -1,0 +1,6 @@
+-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ..\Inc_App -I ..\Src_App --C99
+-I E:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\MDK-ARM\RTE
+-I E:\keil5.18\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I E:\keil5.18\ARM\PACK\Keil\STM32L0xx_DFP\1.4.0\Device\Include
+-D__UVISION_VERSION="518" -D_RTE_ -DSTM32L051xx -DUSE_HAL_DRIVER -DSTM32L051xx
+-o shakesensor_cubemx_demo\stm32l0xx_hal_i2c_ex.o --omf_browse shakesensor_cubemx_demo\stm32l0xx_hal_i2c_ex.crf --depend shakesensor_cubemx_demo\stm32l0xx_hal_i2c_ex.d --feedback "shakeSensor_cubeMx_demo\shakeSensor_cubeMx_demo.fed" "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c"

@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: DWREW FEQF, TESD, LIC=1WS74-FJB1J-GN7A5-G7REN-4ZUP2-NHWLW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  E:\keil5.18\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+E:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\MDK-ARM\shakeSensor_cubeMx_demo.uvprojx
+Project File Date:  04/26/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'E:\keil5.18\ARM\ARMCC\Bin'
+Build target 'shakeSensor_cubeMx_demo'
+compiling ShakeSensor_app.c...
+..\Src_App\ShakeSensor_app.c(767): warning:  #940-D: missing return statement at end of non-void function "ADXL375_INT1_Judge"
+  	}
+..\Src_App\ShakeSensor_app.c(722): warning:  #177-D: variable "value_rtn" was declared but never referenced
+  	    u8  value_rtn=0;     //   0: default    1:  shock     2 :  Act    3:  inact   
+..\Src_App\ShakeSensor_app.c(792): warning:  #177-D: variable "i" was declared but never referenced
+  		u8 i=0;
+..\Src_App\ShakeSensor_app.c(896): warning:  #177-D: variable "i" was declared but never referenced
+    	  u8 i=0,j=0;;
+..\Src_App\ShakeSensor_app.c(896): warning:  #177-D: variable "j" was declared but never referenced
+    	  u8 i=0,j=0;;
+..\Src_App\ShakeSensor_app.c(899): warning:  #177-D: variable "Aux_Reg" was declared but never referenced
+  	  u16  Aux_Reg[6];   
+..\Src_App\ShakeSensor_app.c(1050): warning:  #177-D: variable "i" was declared but never referenced
+     u8  i=0;
+..\Src_App\ShakeSensor_app.c(1215): warning:  #177-D: variable "reg" was declared but never referenced
+      u8  reg[5];
+..\Src_App\ShakeSensor_app.c(1484): warning:  #177-D: variable "i" was declared but never referenced
+     u16   i=0;
+..\Src_App\ShakeSensor_app.c(1485): warning:  #177-D: variable "compare" was declared but never referenced
+     u8    compare[600];
+..\Src_App\ShakeSensor_app.c(1715): warning:  #177-D: variable "i" was declared but never referenced
+    u16 i=0, left=0;
+..\Src_App\ShakeSensor_app.c(1715): warning:  #177-D: variable "left" was declared but never referenced
+    u16 i=0, left=0;
+..\Src_App\ShakeSensor_app.c(1716): warning:  #177-D: variable "compare" was declared but never referenced
+    u8  compare[600];
+..\Src_App\ShakeSensor_app.c(2244): warning:  #177-D: variable "ADDR_VALUE" was declared but never referenced
+     uint32_t ADDR_VALUE=0x0000F0;
+..\Src_App\ShakeSensor_app.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=26024 RO-data=1040 RW-data=60 ZI-data=4396  
+"shakeSensor_cubeMx_demo\shakeSensor_cubeMx_demo.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\wxg_shakesensor\stm32_shaker_v2\shake_sensor_new\MDK-ARM\RTE
+  E:\keil5.18\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  E:\keil5.18\ARM\PACK\Keil\STM32L0xx_DFP\1.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
